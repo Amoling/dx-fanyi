@@ -1,8 +1,11 @@
 {
   "name": "dx-fanyi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个可以翻译的小工具",
   "main": "index.js",
+  "bin": {
+    "dx-fanyi": "./bin/dx-fanyi"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
