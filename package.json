@@ -1,19 +1,55 @@
 {
   "name": "dx-fanyi",
-  "version": "1.0.2",
-  "description": "一个可以翻译的小工具",
+  "version": "1.0.23",
+  "description": "一个翻译工具",
   "main": "index.js",
-  "bin": {
-    "dx-fanyi": "./bin/dx-fanyi"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duxian3345678/dx-fanyi.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "duxian3345678 <286489501qq.com>",
+  "license": "MIT",
+  "bin": {
+    "dx-fanyi": "./bin/fanyi"
   },
   "keywords": [
+    "translate",
     "翻译",
-    "fanyi",
-    "translate"
+    "fanyi"
   ],
-  "author": "duxian",
-  "license": "ISC"
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "dependencies": {
+    "colorful": "^2.1.0",
+    "html-entities": "^1.1.2",
+    "request": "^2.36.0",
+    "shelljs": "^0.7.0",
+    "xml2js": "^0.4.8"
+  },
+  "devDependencies": {
+    "coffee": "~3.2.1",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha tests/index.js --timeout 0"
+  },
+  "bugs": {
+    "url": "https://github.com/duxian3345678/dx-fanyi/issues"
+  },
+  "homepage": "https://github.com/duxian3345678/dx-fanyi#readme",
+  "_shasum": "c6a1a837a2172e78e1503b54055ee53aa95f1c1a",
+  "_from": "fanyi@latest",
+  "_npmVersion": "2.15.0",
+  "_nodeVersion": "4.4.2",
+  "_npmUser": {
+    "name": "duxian3345678",
+    "email": "286489501qq.com"
+  },
+  "maintainers": [
+    "duxian3345678 <286489501qq.com>"
+  ],
+  "directories": {
+    "test": "tests"
+  }
 }

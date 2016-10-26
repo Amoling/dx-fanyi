@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+require('colorful').toxic();
+
+if (!process.argv[2]) {
+  console.log('fanyi ~ ' + require('../package').version.green);
+  console.log('Translate tools in command line'.grey);
+  console.log('  $ '.cyan + 'fanyi word');
+  console.log('  $ '.cyan + 'fanyi world peace');
+  console.log('  $ '.cyan + 'fanyi chinglish');
+  return;
+}
+
+console.log();
+
+var fanyi = require('..');
+fanyi(process.argv.slice(2).join(' '));
